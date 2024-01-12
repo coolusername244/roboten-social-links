@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .socialIcon {
+    @apply border border-iconColor text-iconColor hover:border-iconHover hover:bg-iconHover hover:text-white active:border-iconActive active:bg-iconActive transition-all w-[40px] h-[40px] rounded-full p-2 mt-3 ml-3 text-xl flex items-center justify-center;
+  }
+}
