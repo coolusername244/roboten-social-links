@@ -7,7 +7,12 @@ import { FaYoutube } from 'react-icons/fa';
 import { FaTiktok } from 'react-icons/fa';
 
 function App() {
-  const socialIcons = [
+  type SocialIcon = {
+    icon: JSX.Element;
+    link: string;
+  };
+
+  const socialIcons: SocialIcon[] = [
     {
       icon: <FaLinkedinIn />,
       link: 'https://www.linkedin.com/company/roboten/',
